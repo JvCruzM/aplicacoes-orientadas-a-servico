@@ -1,0 +1,13 @@
+{
+  "name": "express-01",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo para a disciplina AOS da UNICAP",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/index.js"
+  },
+  "keywords": ["express","UNICAP","dotenv","back-end"],
+  "author": "JvCruzM",
+  "license": "ISC",
+  "type": "commonjs"
+}
