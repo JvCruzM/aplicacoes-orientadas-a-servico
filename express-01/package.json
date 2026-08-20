@@ -4,10 +4,25 @@
   "description": "Projeto de exemplo para a disciplina AOS da UNICAP",
   "main": "index.js",
   "scripts": {
-    "start":"node src/index.js"
+    "dev": "nodemon --exec babel-node src/index.js",
+    "start": "node src/index.js"
   },
-  "keywords": ["express","UNICAP","dotenv","back-end"],
+  "keywords": [
+    "express",
+    "UNICAP",
+    "dotenv",
+    "back-end"
+  ],
   "author": "JvCruzM",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/node": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
 }
