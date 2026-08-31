@@ -1,4 +1,5 @@
 import 'dotenv/config';
+// require('dotenv').config()
 
 console.log("Olá, Turma!!!");
 
