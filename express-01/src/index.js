@@ -1,6 +1,21 @@
 import 'dotenv/config';
-// require('dotenv').config()
+import cors from 'cors';
+import express from 'express';
 
-console.log("Olá, Turma!!!");
+const app = express();
 
-console.log("MY_SECRET = ", process.env.MY_SECRET);
+app.use(cors());
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.get('/hello', (req, res) => {
+  res.send('Olá, Turma!');
+});
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () =>
+  console.log(`Example app listening on port ${port}!`),
+);
