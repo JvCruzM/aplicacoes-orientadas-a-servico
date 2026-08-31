@@ -2,7 +2,7 @@
   "name": "express-01",
   "version": "1.0.0",
   "description": "Projeto de exemplo para a disciplina AOS da UNICAP",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
     "build": "babel src -d dist",
