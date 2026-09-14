@@ -22,11 +22,12 @@ app.use((req, res, next) => {
 });
 
 // middleware de autenticação "fake" + injeção dos models no req.context
-app.use((req, res, next) => {
+app.use(async (req, res, next) => {
   req.context = {
     models,
-    me: models.users[1],
+    me: await models.User.findByLogin('rwieruch'),
   };
+
   next();
 });
 
